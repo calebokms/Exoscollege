@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head> <meta charset='utf-8'>
+
+    <style>
+        body{ background-color: beige;}
+        input {
+        width: 300px;
+        height: auto;
+        border-radius: 2px;
+       ;
+      }
+      .cl2{position: absolute; top: 100px;
+     ;}
+    </style>
+     <link rel="shortcut icon" href="Exosmaths.jpg">
+</head>
+
+   
+        <body>
+        
+    <div class="cl2">
+    <fieldset>
+    
+    La mini-calculatrice:<br> 
+    <form name="FF">
+    <input type="text">
+    <select>
+    <option value="+"> +</option>
+    <option value="-"> -</option>
+    <option value="*"> x</option>
+    <option value="/"> /</option>
+    </select>
+    <input type="text">=
+    <input type="text" onFocus="
+    c1=parseInt(document.FF.elements[0].value);
+    op=document.forms[0].elements[1].value;
+    c2=parseInt(document.forms[0].elements[2].value);
+    document.forms[0].elements[3].value=eval(c1+op+c2)
+    ">
+    </form>
+    </fieldset>
+    </div>
+    </html>
